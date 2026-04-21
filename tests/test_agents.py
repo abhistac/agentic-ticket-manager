@@ -291,6 +291,7 @@ class TestNotifierAgent:
         assert result.channels_used == []
 
     @patch("agents.notifier.ChatOpenAI")
+    @patch.dict("os.environ", {"SLACK_WEBHOOK_URL": "", "SMTP_HOST": ""}, clear=False)
     def test_mock_mode_used_without_credentials(self, mock_llm_class):
         """Without Slack/email credentials, mock mode is used."""
         mock_llm = MagicMock()
@@ -300,7 +301,7 @@ class TestNotifierAgent:
         evaluation = make_mock_evaluation()
         agent = NotifierAgent()
 
-        # No env vars set → mock mode
+        # Credentials cleared → mock mode
         assert not agent.slack_enabled
         result = agent.notify(evaluation)
 
