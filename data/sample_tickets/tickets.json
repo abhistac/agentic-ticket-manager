@@ -1,0 +1,58 @@
+[
+  {
+    "id": "TKT-001",
+    "text": "Production API gateway is returning 500 errors for 100% of requests. All customers are affected. Revenue is being lost every minute. Started 8 minutes ago.",
+    "created_at": "2024-01-15T08:52:00Z",
+    "assignee": "sarah.ops@company.com",
+    "status": "Open"
+  },
+  {
+    "id": "TKT-002",
+    "text": "My laptop won't connect to the office VPN. I've tried restarting. Need access for a client call tomorrow morning.",
+    "created_at": "2024-01-15T07:00:00Z",
+    "assignee": "help.desk@company.com",
+    "status": "Open"
+  },
+  {
+    "id": "TKT-003",
+    "text": "Database replication lag has increased to 45 seconds on the reporting replica. Analytics queries are returning stale data. Started about 2 hours ago.",
+    "created_at": "2024-01-15T07:10:00Z",
+    "assignee": "db.team@company.com",
+    "status": "In Progress"
+  },
+  {
+    "id": "TKT-004",
+    "text": "Employee Jake Winters left the company 3 weeks ago but his account is still active and he accessed the HR portal yesterday according to audit logs.",
+    "created_at": "2024-01-15T06:00:00Z",
+    "assignee": "security.ops@company.com",
+    "status": "Open"
+  },
+  {
+    "id": "TKT-005",
+    "text": "The login page is loading slowly - about 8 seconds instead of the usual 1-2 seconds. Users are complaining but can still log in.",
+    "created_at": "2024-01-15T05:30:00Z",
+    "assignee": "app.team@company.com",
+    "status": "Open"
+  },
+  {
+    "id": "TKT-006",
+    "text": "Can you change the font on the internal wiki homepage from Arial to Helvetica? Not urgent at all.",
+    "created_at": "2024-01-15T08:00:00Z",
+    "assignee": "web.team@company.com",
+    "status": "Open"
+  },
+  {
+    "id": "TKT-007",
+    "text": "MFA is broken for all users trying to log in with Google SSO. Nobody can access internal tools. Engineering, Sales and Support are all blocked.",
+    "created_at": "2024-01-15T08:45:00Z",
+    "assignee": "identity.team@company.com",
+    "status": "Open"
+  },
+  {
+    "id": "TKT-008",
+    "text": "Server rack in DC-West is showing disk usage at 94% on the primary storage node. Not critical yet but trending up fast.",
+    "created_at": "2024-01-14T20:00:00Z",
+    "assignee": "infra.team@company.com",
+    "status": "Pending"
+  }
+]
