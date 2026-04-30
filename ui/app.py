@@ -17,9 +17,14 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import streamlit as st
 
-from agents.categoriser import CategorisingAgent
-from agents.sla_monitor import SLAMonitorAgent
-from agents.notifier import NotifierAgent
+# Load API key from Streamlit Cloud secrets if running in cloud
+# Falls back to .env for local development
+import os
+if hasattr(st, "secrets") and "OPENAI_API_KEY" in st.secrets:
+    os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
+
+from agents.compliance_agent import ComplianceAgent, BatchResult
+from agents.ticketing_agent import TicketingAgent
 
 # ── Page config ────────────────────────────────────────────────────────────────
 
